@@ -24,3 +24,5 @@ Then open the project in Expo Go or create an EAS development build.
 ## Daily plan
 
 Add one new workout day at a time. Day 1 is complete; Day 2 is the next planned addition.
+
+Build trigger: Android APK
