@@ -2,15 +2,17 @@
   "expo": {
     "name": "DailyFit",
     "slug": "dailyfit",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.ibrohim18.dailyfit"
+      "bundleIdentifier": "com.ibrohim18.dailyfit",
+      "buildNumber": "2"
     },
     "android": {
-      "package": "com.ibrohim18.dailyfit"
+      "package": "com.ibrohim18.dailyfit",
+      "versionCode": 2
     }
   }
 }
