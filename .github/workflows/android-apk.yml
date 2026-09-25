@@ -41,6 +41,27 @@ jobs:
       - name: Generate Android project
         run: npx expo prebuild --platform android --clean
 
+      - name: Sign release with test key
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          path = Path("android/app/build.gradle")
+          text = path.read_text()
+
+          match = re.search(r'release\s*\{', text)
+          if not match:
+              raise SystemExit("release buildType not found")
+
+          start = match.end()
+          after = text[start:start + 500]
+          if "signingConfig" not in after:
+              text = text[:start] + "\n            signingConfig signingConfigs.debug" + text[start:]
+
+          path.write_text(text)
+          PY
+
       - name: Build release APK
         working-directory: android
         run: |
