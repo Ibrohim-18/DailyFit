@@ -1558,7 +1558,7 @@ const styles = StyleSheet.create({
     height: 145,
     padding: 0,
     marginTop: 0,
-    backgroundColor: '#183427',
+    backgroundColor: '#DFF3E7',
     borderRadius: 24,
   },
   demoTopRow: {
@@ -1609,7 +1609,7 @@ const styles = StyleSheet.create({
     height: 145,
     marginTop: 0,
     borderRadius: 24,
-    backgroundColor: '#183427',
+    backgroundColor: '#DFF3E7',
   },
   demoFloor: {
     position: 'absolute',
